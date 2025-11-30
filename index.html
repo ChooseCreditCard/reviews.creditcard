@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Reviews.Creditcard – Independent Credit Card Reviews & Analysis</title>
-  <meta name="description" content="Independent reviews and analysis of credit cards: earn rates, fees, perks, user fit, strengths and trade-offs so you can decide what card suits you best." />
+  <title>Reviews.Creditcard – How Neutral Credit Card Reviews Should Work</title>
+  <meta name="description" content="Independent framework for credit card reviews: what to include, how to stay neutral, which data points matter and how to read review pages without falling for marketing tricks." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://reviews.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Reviews.Creditcard – Credit Card Reviews & Analysis" />
-  <meta property="og:description" content="Neutral, independent reviews of credit-card offers: what to watch when comparing earn rates, fees, benefits and real-world performance." />
+  <meta property="og:title" content="Reviews.Creditcard – Credit Card Reviews & Directory Framework" />
+  <meta property="og:description" content="How to structure neutral credit card reviews and directories: data sources, scoring logic, red flags and how to compare cards without hidden bias." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://reviews.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Reviews.Creditcard – Credit Card Reviews & Analysis" />
-  <meta name="twitter:description" content="Objective reviews of cards including fees, rewards, perks, pros/cons and expected value based on different user profiles." />
+  <meta name="twitter:title" content="Reviews.Creditcard – Credit Card Reviews Explained" />
+  <meta name="twitter:description" content="Educational overview of how credit card reviews should be structured, sourced and disclosed – before you trust any star rating." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -31,139 +31,199 @@
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <!-- Tailwind -->
+  <!-- Tailwind for utility classes -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Stylesheet -->
+  <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body class="bg-slate-950 text-slate-100">
-<header class="site-header">
-  <div class="nav-inner max-w-6xl">
-    <div class="brand">
-      <div class="cc-logo">CC</div>
-      <div class="brand-text">
-        <div class="brand-title">Reviews.Creditcard</div>
-        <div class="brand-subtitle">In-Depth Card Reviews & Analysis</div>
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <div class="brand-title">Reviews.Creditcard</div>
+          <div class="brand-subtitle">Credit Card Reviews &amp; Directory Framework</div>
+        </div>
       </div>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#anatomy">Anatomy of a Review</a>
+        <a href="#compare">What to Compare</a>
+      </nav>
     </div>
-    <nav class="nav-links">
-      <a href="#overview">Overview</a>
-      <a href="#methodology">How We Review</a>
-      <a href="#use-cases">Who It’s For</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main class="cc-page">
-  <!-- Breadcrumb -->
-  <div class="cc-breadcrumb">
-    <a href="https://choose.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
-  &nbsp;›&nbsp;
-  Reviews.Creditcard
-  </div>
+  <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      Reviews.Creditcard
+    </div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Independent Reviews That Help You Understand What a Card Really Does</h1>
-      <p class="hero-lead">
-        Cards are more than their headline earn rate or signup bonus. Our reviews dive into real-world strengths and trade-offs: fees, perks, suitability for different spending patterns — so you can see whether a card works for you, not just looks good on paper.
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How Neutral Credit Card Reviews Should Actually Work</h1>
+        <p class="hero-lead">
+          “Best card” lists and 5-star ratings are everywhere, but the structure behind a review matters more than the headline. This page explains how to build – and read – credit card reviews in a transparent, documentation-first way.
+        </p>
+        <a class="cta" href="https://choose.creditcard/reviews/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Go to the Reviews &amp; Directory hub
+        </a>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <h2>Why Review Structure Matters More Than Stars</h2>
+      <p>Most credit card reviews look similar on the surface: a few pros and cons, a star rating, and a “best for” label. But behind the scenes, there can be large differences in how data is collected, how scores are calculated and how commercial incentives influence what you see.</p>
+      <p>Reviews.Creditcard focuses on the <strong>framework</strong> for reviews, not on specific issuers. The goal is to help you recognise when a review page is designed to inform you – and when it is mainly designed to push you toward a particular application button.</p>
+      <p>This minisite is part of The CreditCard Collection and is <strong>educational only</strong>. It does not rate individual cards or provide financial advice.</p>
+    </section>
+
+    <!-- Anatomy of a review -->
+    <section id="anatomy" class="section">
+      <h2>Anatomy of a Transparent Credit Card Review</h2>
+      <p>A neutral credit card review can still be opinionated – but it should be clear where facts end and opinions begin. A solid structure usually includes:</p>
+      <ul>
+        <li><strong>Data summary:</strong> Key facts like FX fees, annual fees, APR ranges, network, lounge access and insurance, pulled from official documents.</li>
+        <li><strong>Use-case focus:</strong> Who the card may suit (for example, frequent travellers vs. occasional shoppers) without claiming it is “best for everyone”.</li>
+        <li><strong>Methodology:</strong> An explanation of which metrics were used to score or compare the card.</li>
+        <li><strong>Disclosure:</strong> Clear information on whether the site earns commission if you apply.</li>
+        <li><strong>Update log:</strong> When key data was last checked against issuer documentation.</li>
+      </ul>
+      <p>On Choose.Creditcard, this type of structure will feed into more systematic comparison tables and directories rather than standalone “review articles”.</p>
+    </section>
+
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>What to Look For When Reading Card Reviews</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data sources</td>
+              <td>Mentions of card terms, fee schedules and insurance documents.</td>
+              <td>Shows whether the review is based on marketing or on primary documentation.</td>
+            </tr>
+            <tr>
+              <td>Scoring logic</td>
+              <td>Simple explanation of how scores or rankings are calculated.</td>
+              <td>Helps you judge if the criteria fit your own usage pattern.</td>
+            </tr>
+            <tr>
+              <td>Affiliate disclosures</td>
+              <td>Clear statements near buttons and links, not hidden in small print.</td>
+              <td>Commercial relationships can affect which cards are highlighted.</td>
+            </tr>
+            <tr>
+              <td>Coverage of downsides</td>
+              <td>Balanced discussion of fees, limits, restrictions and risks.</td>
+              <td>Strong reviews highlight trade-offs, not only attractive perks.</td>
+            </tr>
+            <tr>
+              <td>Update frequency</td>
+              <td>Timestamps or notes on when data was last verified.</td>
+              <td>Card offers change often; stale information can mislead.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        Reviews on The CreditCard Collection network will follow a documentation-first, disclosure-heavy structure – and then connect back to neutral comparison hubs on
+        <a href="https://choose.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
       </p>
-      <a class="cta" href="https://choose.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-        Browse reviewed cards
-      </a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Overview -->
-  <section id="overview" class="section">
-    <h2>What We Cover in Each Review</h2>
-    <p>Each review examines a card’s structure: annual fees, rewards or earn rate, bonus categories, benefits and perks, foreign transaction and conversion fees, redemption flexibility, and any limitations or fine-print clauses.</p>
-    <p>We also simulate typical use-cases: everyday spending, travel, foreign currency transactions, cash withdrawals and high-volume categories — to estimate realistic net value rather than idealized “best-case” returns.</p>
-  </section>
+    <!-- Red flags -->
+    <section class="section">
+      <h2>Common Red Flags in Card Review Pages</h2>
+      <p>Not every glossy review page is built with your interests first. Typical warning signs include:</p>
+      <ul>
+        <li>Lists where every “top” card comes from the same small group of issuers.</li>
+        <li>Very strong language (“best”, “must-have”) without clear methodology.</li>
+        <li>Missing or buried disclosures about commissions and referral fees.</li>
+        <li>Little or no discussion of FX fees, penalties, insurance exclusions or limits.</li>
+        <li>Identical language across many sites, suggesting generic marketing copy.</li>
+      </ul>
+      <p>This minisite does not claim that all affiliate-based reviews are bad. Instead, it argues that reviews should be explicit about incentives so you can weigh them accordingly.</p>
+    </section>
 
-  <!-- Methodology -->
-  <section id="methodology" class="section">
-    <h2>How We Analyze Cards — and What We Don’t Do</h2>
-    <p>We use a standardized framework to assess cards: reward structure, fee analysis, benefit value, flexibility, and user-type fit. We assume responsible use (paying off balance each month) and vary spend levels to account for different user profiles — minimal spender, moderate user, heavy traveler, etc.</p>
-    <p>We do not accept sponsorships or referrals from card issuers. Our reviews are based on publicly available documentation and, where available, community feedback and long-term user reports.</p>
-  </section>
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore Related Comparison & Directory Minisites</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card" href="https://comparecards.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_comparecards">
+          <h3>CompareCards.Creditcard</h3>
+          <p>How side-by-side comparison tables work and which columns matter most.</p>
+        </a>
+        <a class="cluster-card" href="https://comparecard.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_comparecard">
+          <h3>CompareCard.Creditcard</h3>
+          <p>Single-card comparison logic and how to benchmark one product at a time.</p>
+        </a>
+        <a class="cluster-card" href="https://directory.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_directory">
+          <h3>Directory.Creditcard</h3>
+          <p>Structured directories of card types, not just “top lists”.</p>
+        </a>
+        <a class="cluster-card" href="https://guides.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_guides">
+          <h3>Guides.Creditcard</h3>
+          <p>Educational explainers that support the review and comparison structure.</p>
+        </a>
+        <a class="cluster-card" href="https://benefits.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_benefits">
+          <h3>Benefits.Creditcard</h3>
+          <p>Deep dives into premium perks often highlighted in reviews.</p>
+        </a>
+      </div>
+    </section>
 
-  <!-- Use Cases -->
-  <section class="section">
-    <h2>Who Uses These Reviews — and What For</h2>
-    <p>If you want a card for everyday spend, lounge access, travel perks or to avoid foreign transaction fees — our reviews help you compare which card fits best, depending on your lifestyle. Frequent travelers, expatriates, people with mixed currency spend or those chasing maximal rewards tend to benefit most.</p>
-    <p>We also cover niche needs: rebuilding credit, low-cost cards, digital-first cards, cards with strong fraud protection, and products optimized for non-US residents or global travellers.</p>
-  </section>
+    <!-- Collection / hub snippet -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        Reviews.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused minisites by ronarn AS. Each page explains one part of the comparison logic in plain language before sending you back to the main hub.
+      </p>
+      <p class="small">
+        We do not issue cards and do not provide personalised financial advice. Any future review implementations on Choose.Creditcard will prioritise documentation, methodology and clear affiliate disclosures.
+      </p>
 
-  <!-- Cluster -->
-  <section class="section">
-    <h2>Related Topics & Further Reading</h2>
-    <div class="cluster-grid">
-      <a class="cluster-card" href="https://compare.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_compare">
-        <h3>Compare.Creditcard</h3>
-        <p>Tools and frameworks to compare multiple cards side by side.</p>
-      </a>
-      <a class="cluster-card" href="https://earn.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_earn">
-        <h3>Earn.Creditcard</h3>
-        <p>Deep dive into how earn rates are structured and calculated.</p>
-      </a>
-      <a class="cluster-card" href="https://benefits.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_benefits">
-        <h3>Benefits.Creditcard</h3>
-        <p>Overview of premium perks and benefit-laden cards.</p>
-      </a>
-      <a class="cluster-card" href="https://loyalty.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_loyalty">
-        <h3>Loyalty.Creditcard</h3>
-        <p>Long-term card loyalty, status benefits and retention strategies.</p>
-      </a>
-      <a class="cluster-card" href="https://access.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=cluster_access">
-        <h3>Access.Creditcard</h3>
-        <p>Card access, global usage, ATM and wallet capabilities.</p>
-      </a>
-    </div>
-  </section>
+      <!-- Official hub snippet: Reviews & Directory hub -->
+      <div class="hub-link mt-4">
+        <a href="https://choose.creditcard/reviews/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-400 hover:text-slate-100">
+          Learn more at the Reviews &amp; Directory hub on Choose.Creditcard
+        </a>
+      </div>
+    </section>
 
-  <!-- Collection -->
-  <section class="section">
-    <h2>Part of The CreditCard Collection</h2>
-    <p class="small">
-      Reviews.Creditcard is part of <strong>The CreditCard Collection</strong> — a set of informational cards built by ronarn AS to help users navigate the complexity of credit-card offers and pick options that match their reality.  
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to See How Reviews Fit Into the Bigger Picture?</h2>
+      <p class="small">
+        Use Reviews.Creditcard to understand the review and directory framework – then head to the Reviews &amp; Directory hub on Choose.Creditcard to see how structured, documentation-based reviews can support your own comparisons.
+      </p>
+      <a class="cta" href="https://choose.creditcard/reviews/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to the Reviews &amp; Directory hub
+      </a>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
-    <p class="small">
-      We don’t endorse specific products nor collect referral compensations. Our mission is independent clarity and transparency, helping you evaluate cards without marketing noise.  
-    </p>
-    <p class="small">
-      This content is educational only. Card terms, benefits and regulatory conditions change over time — always double check details with issuers.  
-    </p>
-
-    <!-- REQUIRED HUB SNIPPET – Reviews hub -->
-    <div class="hub-link">
-      <a href="https://choose.creditcard/reviews/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
-         class="text-sm text-slate-600 hover:text-slate-900">
-        Learn more at the Reviews hub
-      </a>
-    </div>
-  </section>
-
-  <!-- Bottom CTA -->
-  <section class="section">
-    <h2>Ready to Browse In-Depth Card Reviews?</h2>
-    <p class="small">
-      Use Reviews.Creditcard to compare card strengths and weaknesses — then visit the main hub to check live offers and find the card best suited to your spending habits.  
-    </p>
-    <a class="cta" href="https://choose.creditcard/?utm_source=reviews.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-      Go to Choose.Creditcard
-    </a>
-  </section>
-</main>
-
-<footer class="mini-footer">
-  <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
-  <p class="mini-footer-contact">
-    Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
-  </p>
-</footer>
+  </footer>
 </body>
 </html>
